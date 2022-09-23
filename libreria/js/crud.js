@@ -11,7 +11,7 @@ function limpiar () {
 $ (function () { 
 $ ("#crear") .click(function() {
     db.transaction(function(transaction) {
-        var sql="CREATE TABLE Idea"+
+        var sql="CREATE TABLE IDEA"+
         "(id INTERGER NOT NULL PRIMARY KEY AUTOINCREMENT, "+
         "item VARCHAR(100) NOT NULL, "+
         "Importancia ENTERO NOT NULL)";
