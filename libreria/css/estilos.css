@@ -47,10 +47,10 @@ body{
 
         .texto-idea h1{
            
-            font-family: "Catamaran" ; 
+            font-family: "Pacifico" ; 
             font-size: 125px;
             height: 175px;
-            color: rgba(30, 114, 34, 0.521);
+            color: rgba(5, 5, 5, 0.521);
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -130,120 +130,179 @@ img{
 
 /* Media    */
 
-@media screen and (max-width:1000px){ 
+@media screen and (max-width:989px) { 
  .logo-hero>img{ 
-    width: 120px;
-    height: 120px;
-    margin: 10px;
-    padding: 15px;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    padding: 5px;
  }
     .textos-hero>h1{
         text-align: center;
-        font-size: 25px;
+        width: 90%;
+        height: 80%;
+        margin-top: 50px;
+        font-size: 38px;
 
     }
 
     .textos-hero>p{
         text-align: center;
-        font-size: 18px;
+        width: auto;
+        height: auto;
+        margin-top: auto;
+        font-size: 28px;
     }
 
     /* Estilos idea */
     .texto-idea h1{
         text-align: center;
-        font-size: 75px;
+        margin: 50px;
+        font-size: 90px;
     }
 
-    .conteiner{
+    legend {
+        float: left;
+        width: 100%;
+        padding: 25px;
+        margin-bottom: 10px;
+        font-size: 55px;
+        line-height: inherit;
+    }  
+    
+    .form-control{
+        display: block;
+        width: 90%;
+        padding: 0.500rem 0.120rem;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 2;
+        color: darkgreen;
+        background-color: white;
+        background-clip: padding-box;
+        appearance: none;
+        border-radius: 0.410rem;
+        transition: border-color 0.25s;
+
+    }
+    
+    .btn{
       
-       height: 125px;
-       font-size: 20px;
-    }
-
-    legend{
+        height: 65px;
+        text-align: justify;
         font-size: 30px;
+        margin-bottom: 30px;
+        
+
     }
 
 
     /* Realizar */
 
     .texto-realizar h3{
-        font-size: 55px;
+        font-size: 80px;
         text-align: center;
-    }
-
-    /* Footer */
-
-    .textos-end{
-         text-align: center;
-        font-size: 20px;
-    }
-
-@media screen and (max-width:400px){
-
-   
-.textos-hero>h1{
-        font-size: 18px;
-}
-
-.textos-hero>p{
-        font-size: 12px;
-        text-align: center;
-
-}
-
-       
-    .hero{
-    
-        background-image: linear-gradient(to right, rgba(70, 53, 48, 0.836) 0%, rgba(80, 121, 75, 0.699) 70%), url("/libreria/img/idea.jpg") ;
-
-    }
-   
- 
-    .logo-hero>img{ 
-        width:90px;
-        height: 90px;
+        margin-top: 10px;
+        margin-bottom: 0.15rem;
+        font-weight: 500;
+        line-height: 1.5;
         
     }
-  
-         /* Estilos idea */
-    .texto-idea h1{
-        text-align: center;
-        font-size: 50px;
-    }
-
-    .conteiner{
-      
-       height: 35px;
-       font-size: 12px;
-    }
-
-    legend{
-        font-size: 20px;
-        margin: 5px;
-        padding: 3px;
-    }
-
-    .btn{
-        width: 75px;
-        height: 75px;
-        text-align: center;
-        font-size: 13px;
-
-    }
-
-
-    /* Realizar */
-
-    .texto-realizar h3{
-        font-size: 35px;
-        text-align: center;
-    }
 
     /* Footer */
 
     .textos-end{
          text-align: center;
-        font-size: 15px;
+        font-size: 20px;
     }
+
+@media screen and (max-width:770px){
+
+    .logo-hero>img{ 
+        width: 75px;
+        height: 75px;
+        margin: .5px;
+        padding: .5px;
+     }
+        .textos-hero>h1{
+            text-align: center;
+            width: 90%;
+            height: 80%;
+            margin-top: 100px;
+            font-size: 25px;
+    
+        }
+    
+        .textos-hero>p{
+            text-align: center;
+            width: auto;
+            height: auto;
+            margin-top: auto;
+            font-size: 14px;
+        }
+    
+        /* Estilos idea */
+        .texto-idea h1{
+            text-align: center;
+            margin: 1px;
+            padding: 1px;
+            font-size: 45px;
+        }
+    
+        legend {
+            float: left;
+            width: 100%;
+            padding: 30px;
+            margin-bottom: 5px;
+            font-size: 30px;
+            line-height: inherit;
+        }  
+        
+        .form-control{
+            display: block;
+            width: 90%;
+            padding: 0.500rem 0.120rem;
+            font-size: 35px;
+            font-weight: 400;
+            line-height: 2;
+            color: rgba(100, 15, 0, 0.686);
+            background-color: white;
+            background-clip: padding-box;
+            appearance: none;
+            border-radius: 0.410rem;
+            transition: border-color 0.25s;
+    
+        }
+        
+        .btn{
+          
+            height: 50px;
+            text-align: justify;
+            font-size: 25px;
+            margin-bottom: 15px;
+            
+    
+        }
+    
+    
+        /* Realizar */
+    
+        .texto-realizar h3{
+            font-size: 55px;
+            text-align: center;
+            margin: 10px;
+            margin-bottom: 0.15rem;
+            font-weight: 500;
+            line-height: 1.5;
+            
+        }
+    
+        /* Footer */
+    
+        .textos-end{
+             text-align: center;
+            font-size: 20px;
+        }
+       
+
 }}

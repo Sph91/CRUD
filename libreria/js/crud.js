@@ -8,16 +8,15 @@ function limpiar () {
 
 // Funcionalidad de los botones //
 
-$ (function () { 
-$ ("#crear") .click(function() {
-    db.transaction(function(transaction) {
-        var sql="CREATE TABLE IDEA"+
-        "(id INTERGER NOT NULL PRIMARY KEY AUTOINCREMENT, "+
+$(function () { 
+$("#crear").click(function(){
+    db.transaction(function(transaction){
+        var sql="CREATE TABLE Idea"+
+        "(id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "+
         "item VARCHAR(100) NOT NULL, "+
         "Importancia ENTERO NOT NULL)";
-        transaction.executeSql(squl,undefined, function() {
-            alert("Tabla creada exitosamente") ;
-        
+        transaction.executeSql(sql,undefined, function() {
+            alert("Inicio de registro creado exitosamente") ;
         }, function ( transaction, err ) {
                 alert(err.message);
     
