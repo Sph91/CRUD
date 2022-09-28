@@ -11,42 +11,72 @@
 
 <body style="color: white; background-color:slategrey">
 
-<div class="CRUD">
+
         
-    <header class="Encabezado">
-               <div class="Fondo-Encabezado">
-                    <h1> Proyecto CRUD</h1>
-               </div>               
-    </header>
+  
 
-    <div class="contenido">
+    <div class="container mt-5">
+        <div class="text-center">
+            <h1 class="display-5 mb-5"><strong>Aplicación CRUD</strong></h1>
+        </div>
+        <div class="main row justify-content-center">
+                <form action="" id="student-form" class="row justify-content-center mb-4" autocomplete="off">
+                <div class="col-10 col-md-8 mb-3">
+                    <label for="FirstName">Nombre</label>
+                    <input class="form-control" id="FirstName" type="text" placeholder="Escriba su nombre">
+                </div>
+                <div class="col-10 col-md-8 mb-3">
+                    <label for="lasttName">Apellidos</label>
+                    <input class="form-control" id="lastName" type="text" placeholder="Escriba su apellido">
+                </div>
+                <div class="col-10 col-md-8 mb-3">
+                    <label for="rollNo">Matricula</label>
+                    <input class="form-control" id="rollNo" type="text" placeholder="Ingrese su matricula">
+                </div>
+                <div class="col-10">
+                    <input class="btn btn-success add-btn" type="submit" vslue="Submit">
+                </div>
+              </form>
+                <div class="col-12 col-md-10 mt-5">
+                    <table class="table table-striped table-dark">
+                        <thead>
+                            <tr>
+                                <th>Nombres</th>
+                                <th>Apellido</th>
+                                <th>Matricula</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                         <tbody id="student-list">
+                            <tr>
+                                <td>Dear</td>
+                                <td>Programmer</td>
+                                <td>25</td>
+                                <td>
+                                 <a href="#" class="btn btn-warning btn-sm edit">Editar</a> 
+                                 <a href="#" class="btn btn-danger btn-sm delete">Delete</a>  
+                                    
+                                </td>
+                                
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+             </div>
+
+
         
 
 
-    </div>
+
 
     
-         <footer class="CONTACTO">
-             <div class="datos">
-
-                    <h3>Información:</h3>
-                    <p>Tel:9995677209</p>
-
-                   <h3>Email</h3>
-                   <p>ponte@contacto.es</p>
-
-                    <h3>Dirección</h3>
-                    <p>Calle 9#360 entre calle 31 y 33 Col. Altabrisa, Gto</p>
-            </div>
-        
-       
-        </footer>
 
 </div>
 
       
 
-
+<script src="script.js"></script>
     
 </body>
 </html>
