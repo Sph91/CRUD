@@ -13,6 +13,32 @@ function showAlert(message, className){
     setTimeout(() => document.querySelector(".alert").remove(), 3000);
 }
 
+// Limpiar todos los documentos
+function clearFields(){
+    document.querySelector("#FirstName").value ="";
+    document.querySelector("#lastName").value ="";
+    document.querySelector("#rollNo").value ="";
+}
+
+// Agregar Información
+
+document.querySelector("student-form").addEventListener("submit", (e) =>{
+    e.preventDefault();
+
+//Obtener el valor del formulario
+const firtsName = document.querySelector("#firstName").value;
+const lastName = document.querySelector("#lastName").value;
+const rollNo = document.querySelector("#rollNo").value;
+
+
+
+// Validar
+if(firstName == ""|| lastName == "" || rollNo ==""){
+    showAlert("Favor de rellenar todos los campos", "danger");
+}
+
+});
+
 
 // Borrar Información
 
