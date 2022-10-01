@@ -88,4 +88,3 @@ document.querySelector("#student-list").addEventListener("click", (e) =>{
         showAlert("Estudiante eliminado", "danger");
     }
 });
-
