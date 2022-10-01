@@ -58,7 +58,7 @@ else{
         selctedRow.children[1].textContent = lastName;
         selctedRow.children[2].textContent = rollNo;
         selctedRow = null;
-        showAlert("Editar información del estudiante", "info");
+        showAlert("Información del estudiante editada", "info");
     }
 
     clearFields();
