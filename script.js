@@ -1,3 +1,42 @@
+// obtener_localStorage();
+
+// function obtener_localStorage(){
+
+//     if (localStorage.getItem("nombre")){
+
+// // se que existe el nombre en el localstorage
+//     let nombre = localStorage.getItem("nombre");
+//     let persona =JSON.parse(localStorage.getItem("persona"));
+
+
+//     console.log( nombre );
+//     console.log( persona );
+    
+
+//     }else{
+//         console.log ("No existe en el localStorage")
+//     }
+       
+    
+// }
+// guardar_localstorage();
+// function guardar_localstorage(){
+//     let persona ={
+//         nombre: "Andres Manuel",
+//         apellido: "Lopez Obrador",
+//         calificación: "-10" 
+//     }
+    
+//     let nombre = "Amlo";
+
+//     localStorage.setItem("nombre", nombre  );
+//     localStorage.setItem("alumno", JSON.stringify(persona));
+
+// }
+
+
+
+
 var selctedRow= null;
 
 // Muestra Alerta 
@@ -26,15 +65,60 @@ document.querySelector("#student-form").addEventListener("submit", (e) =>{
     e.preventDefault();
 
 //Obtener el valor del formulario
-const firstName = document.querySelector("#firstName").value;
-const lastName = document.querySelector("#lastName").value;
-const rollNo = document.querySelector("#rollNo").value;
+let firstName = document.querySelector("#firstName").value;
+let lastName = document.querySelector("#lastName").value;
+let rollNo = document.querySelector("#rollNo").value;
+
+//LOCALSTOR
+
+
+obtener_localStorage();
+
+function obtener_localStorage(){
+
+    if (localStorage.getItem("firstName")){
+
+// se que existe el nombre en el localstorage
+    let nombre = localStorage.getItem("firstName");
+    let persona =JSON.parse(localStorage.getItem("calificación"));
+
+
+    console.log( firstName );
+    console.log( calificación );
+    
+
+    }else{
+        console.log ("No existe en el localStorage")
+    }
+       
+    
+}
+guardar_localstorage();
+function guardar_localstorage(){
+    let firstName ={
+        nombre: [],
+        apellido: []
+         
+    }
+
+    let rollNo ={
+        calificación: []
+    }
+    
+    localStorage.setItem("calificación", rollNo   );
+    localStorage.setItem("alumno", JSON.stringify(firstName));
+
+}
 
 
 
-// Validar
+
+
+
+ // Validar
 if(firstName == "" || lastName == "" || rollNo ==""){
     showAlert("Favor de rellenar todos los campos", "danger");
+    
 }
 else{
     if(selctedRow == null){
@@ -88,3 +172,5 @@ document.querySelector("#student-list").addEventListener("click", (e) =>{
         showAlert("Estudiante eliminado", "danger");
     }
 });
+
+
