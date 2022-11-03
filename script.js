@@ -1,35 +1,4 @@
-// obtener_localStorage();
 
-// function obtener_localStorage(){
-
-//     if (localStorage.getItem("nombre")){
-
-// // se que existe el nombre en el localstorage
-//     let nombre = localStorage.getItem("nombre");
-//     let persona =JSON.parse(localStorage.getItem("persona"));
-
-//     console.log( nombre );
-//     console.log( persona );
-
-//     }else{
-//         console.log ("No existe en el localStorage")
-//     }
-
-// }
-// guardar_localstorage();
-// function guardar_localstorage(){
-//     let persona ={
-//         nombre: "Andres Manuel",
-//         apellido: "Lopez Obrador",
-//         calificación: "-10"
-//     }
-
-//     let nombre = "Amlo";
-
-//     localStorage.setItem("nombre", nombre  );
-//     localStorage.setItem("alumno", JSON.stringify(persona));
-
-// }
 
 var selctedRow = null;
 
@@ -61,7 +30,7 @@ document.querySelector("#student-form").addEventListener("submit", (e) => {
   //Obtener el valor del formulario
   let firstName = document.querySelector("#firstName").value;
   let lastName = document.querySelector("#lastName").value;
-  let rollNo = document.querySelector("#rollNo").value;
+  let rollNo = document.querySelector("#grade").value;
 
   //LOCALSTOR
 
@@ -71,10 +40,10 @@ document.querySelector("#student-form").addEventListener("submit", (e) => {
     if (localStorage.getItem("firstName")) {
       // se que existe el nombre en el localstorage
       let nombre = localStorage.getItem("firstName");
-      let persona = JSON.parse(localStorage.getItem("calificación"));
+      let persona = JSON.parse(localStorage.getItem("Calificación"));
 
       console.log(firstName);
-      console.log(calificación);
+      console.log(Calificación);
     } else {
       console.log("No existe en el localStorage");
     }
@@ -167,4 +136,5 @@ const save = () => {
     localStorage.setItem("lista", JSON.stringify(lista))
 
 };
+
 
